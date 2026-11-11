@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1d101b">
+<meta name="description" content="BEAUTY BEYOND — confidence, elegance and beauty in every detail.">
+<title>BEAUTY BEYOND ✨</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+:root{--ink:#1d101b;--plum:#382033;--rose:#d8a8b8;--blush:#f5e7e8;--cream:#fffaf4;--gold:#d9b77c;--muted:#b9a9b2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:8;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}.topline{height:4px;background:linear-gradient(90deg,var(--rose),var(--gold),#fff0d7,var(--rose))}
+nav{height:82px;padding:0 7vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff17;position:relative;z-index:5;background:#1d101bd9;backdrop-filter:blur(14px)}
+.brand{font-family:'Playfair Display',serif;letter-spacing:.13em;font-size:19px}.brand span{color:var(--gold)}.navlinks{display:flex;gap:32px;color:#e7d9df;font-size:12px;letter-spacing:.15em;text-transform:uppercase}.navlinks a{transition:color .25s}.navlinks a:hover{color:var(--gold)}.menu{display:none;background:none;border:1px solid #ffffff55;color:white;border-radius:50%;width:40px;height:40px}
+.hero{min-height:calc(100vh - 86px);display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:60px 9vw 80px;gap:5vw;position:relative;isolation:isolate}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:#a65f7b30;filter:blur(90px);left:-180px;top:10%;z-index:-1}
+.hero-copy{max-width:590px;animation:rise 1s both}.eyebrow{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:13px}.eyebrow:before{content:"";width:36px;height:1px;background:var(--gold)}
+h1{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(54px,7vw,100px);line-height:.98;letter-spacing:-.045em;margin:28px 0 22px}h1 em{color:var(--rose);font-weight:400}.hero-copy p{color:#d4c5cc;line-height:1.9;font-size:15px;max-width:440px}.actions{display:flex;gap:14px;align-items:center;margin-top:35px;flex-wrap:wrap}.btn{padding:15px 24px;border-radius:2px;background:linear-gradient(110deg,#d9b77c,#f0d8ac);color:#241521;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-4px);box-shadow:0 12px 35px #d9b77c35}.textlink{font-size:12px;color:#f0dce4;letter-spacing:.1em;border-bottom:1px solid #d8a8b8;padding:8px 0}
+.hero-visual{height:min(690px,78vh);min-height:490px;position:relative;display:flex;justify-content:center;align-items:center;animation:rise 1.2s .15s both}.hero-frame{height:100%;width:min(82%,440px);position:relative;z-index:1;border-radius:220px 220px 8px 8px;overflow:hidden;border:1px solid #d9b77c99;box-shadow:0 30px 90px #0008}.hero-frame:after{content:"";position:absolute;inset:12px;border:1px solid #fff8;border-radius:210px 210px 4px 4px;pointer-events:none}.hero-frame img{width:100%;height:100%;object-fit:cover;object-position:center 24%;filter:saturate(.9);transition:transform 1s}.hero-frame:hover img{transform:scale(1.04)}.orbit{position:absolute;width:min(96%,520px);aspect-ratio:1;border:1px solid #d9b77c55;border-radius:50%;animation:spin 32s linear infinite}.orbit:before,.orbit:after{content:"✦";position:absolute;color:var(--gold);font-size:18px}.orbit:before{top:12%;right:12%}.orbit:after{bottom:13%;left:8%;font-size:12px}.seal{position:absolute;right:0;bottom:8%;z-index:2;background:var(--cream);color:var(--ink);width:116px;height:116px;border-radius:50%;display:grid;place-items:center;text-align:center;font-family:'Playfair Display',serif;font-size:16px;line-height:1.2;transform:rotate(9deg);box-shadow:0 12px 35px #0005}.seal span{font-size:22px;color:#a55b78}
+.scroll-note{position:absolute;bottom:24px;left:9vw;color:#bdaeb6;font-size:9px;letter-spacing:.25em;text-transform:uppercase;display:flex;align-items:center;gap:12px}.scroll-note:before{content:"";width:44px;height:1px;background:var(--gold)}
+section{padding:110px 9vw}.section-head{text-align:center;margin:0 auto 54px;max-width:620px}.kicker{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}h2{font:400 clamp(38px,5vw,62px)/1.08 'Playfair Display',serif;margin:16px 0}.section-head p{color:#bdaeb6;line-height:1.8;font-size:14px}
+.about{background:var(--cream);color:var(--ink);display:grid;grid-template-columns:.9fr 1.1fr;gap:8vw;align-items:center}.about-photo{height:570px;position:relative}.about-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%;border-radius:3px}.about-photo:after{content:"";position:absolute;inset:16px -16px -16px 16px;border:1px solid var(--gold);z-index:0;pointer-events:none}.about-photo img{position:relative;z-index:1}.about-copy .kicker{color:#9d6177}.about-copy h2{font-size:clamp(42px,5vw,66px)}.about-copy p{color:#6f5c66;line-height:1.95;font-size:14px}.signature{font:italic 28px 'Playfair Display',serif;color:#9d6177;margin-top:28px}
+.gallery{background:linear-gradient(145deg,#241522,#321d2e)}.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:110px;gap:16px}.tile{position:relative;overflow:hidden;border-radius:3px;background:#503347;cursor:pointer}.tile:nth-child(1){grid-column:span 5;grid-row:span 5}.tile:nth-child(2){grid-column:span 3;grid-row:span 3}.tile:nth-child(3){grid-column:span 4;grid-row:span 4}.tile:nth-child(4){grid-column:span 3;grid-row:span 3}.tile:nth-child(5){grid-column:span 4;grid-row:span 3}.tile:nth-child(6){grid-column:span 5;grid-row:span 4}.tile img{width:100%;height:100%;object-fit:cover;transition:transform .7s,filter .7s;filter:saturate(.82)}.tile:hover img{transform:scale(1.07);filter:saturate(1.08)}.tile:after{content:"✦";position:absolute;right:16px;bottom:12px;color:white;text-shadow:0 2px 8px #000;font-size:18px;opacity:0;transition:opacity .3s}.tile:hover:after{opacity:1}
+.manifesto{background:#f2e5e6;color:var(--ink);text-align:center;padding-top:100px;padding-bottom:100px}.manifesto blockquote{font:400 clamp(30px,4.8vw,58px)/1.25 'Playfair Display',serif;max-width:900px;margin:25px auto}.manifesto blockquote em{color:#a45f79}.manifesto .kicker{color:#9d6177}
+footer{padding:75px 9vw 28px;background:#160d16;text-align:center}.footer-star{font-size:30px;color:var(--gold)}footer h2{font-size:clamp(38px,5vw,60px)}footer p{color:#bdaeb6;font-size:13px;line-height:1.8}.footer-bottom{border-top:1px solid #ffffff1b;margin-top:55px;padding-top:22px;display:flex;justify-content:space-between;color:#8e7c87;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.reveal.visible{opacity:1;transform:translateY(0)}
+.lightbox{position:fixed;inset:0;background:#100910f2;z-index:20;display:none;align-items:center;justify-content:center;padding:30px}.lightbox.open{display:flex;animation:fade .25s}.lightbox img{max-width:min(90vw,900px);max-height:88vh;object-fit:contain;box-shadow:0 20px 70px #000}.close{position:absolute;top:25px;right:30px;border:1px solid #ffffff66;color:white;background:transparent;border-radius:50%;width:44px;height:44px;font-size:22px;cursor:pointer}
+.spark{position:fixed;pointer-events:none;color:var(--gold);z-index:9;animation:float 1.5s ease-out forwards;font-size:12px}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes fade{from{opacity:0}to{opacity:1}}@keyframes float{0%{opacity:0;transform:translateY(0) scale(.5)}20%{opacity:1}100%{opacity:0;transform:translateY(-65px) scale(1.3)}}
+@media(max-width:850px){nav{padding:0 6vw}.navlinks{gap:16px;font-size:10px}.hero{padding:55px 7vw 90px;gap:2vw}.hero-visual{min-height:420px}.about{padding:85px 7vw;gap:5vw}.about-photo{height:470px}section{padding:85px 7vw}}
+@media(max-width:620px){nav{height:70px}.brand{font-size:16px}.menu{display:block}.navlinks{display:none;position:absolute;top:69px;left:0;right:0;background:#211321;padding:22px 7vw;flex-direction:column;gap:20px}.navlinks.show{display:flex}.hero{grid-template-columns:1fr;padding-top:55px;gap:35px}.hero-copy{order:1}.hero-visual{order:2;height:520px;min-height:0}.hero-frame{width:75%}h1{font-size:64px}.scroll-note{display:none}.about{grid-template-columns:1fr}.about-photo{height:440px;margin-right:14px;order:2}.about-copy{order:1}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px;gap:10px}.tile:nth-child(n){grid-column:span 1;grid-row:span 2}.tile:nth-child(1),.tile:nth-child(6){grid-row:span 3}.tile:nth-child(3){grid-row:span 3}.footer-bottom{flex-direction:column;gap:12px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<nav>
+  <a class="brand" href="#home">BEAUTY <span>BEYOND ✨</span></a>
+  <button class="menu" aria-label="Open menu" onclick="document.querySelector('.navlinks').classList.toggle('show')">☰</button>
+  <div class="navlinks"><a href="#home">Home</a><a href="#story">Her story</a><a href="#gallery">Gallery</a><a href="#message">Our belief</a></div>
+</nav>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow">Elegance • Confidence • You</div>
+    <h1>Beauty<br><em>Beyond</em><br>limits.</h1>
+    <p>A celebration of a woman whose presence speaks softly, whose confidence shines brightly, and whose beauty goes far beyond what the eyes can see.</p>
+    <div class="actions"><a class="btn" href="#story">Meet the lead ✦</a><a class="textlink" href="#gallery">Explore her world ↗</a></div>
+  </div>
+  <div class="hero-visual">
+    <div class="orbit"></div>
+    <div class="hero-frame"><img src="assets/hijab-portrait-1.webp" alt="The lead of Beauty Beyond in a lavender hijab"></div>
+    <div class="seal">Beauty<br>with a<br><span>♥</span></div>
+  </div>
+  <div class="scroll-note">Scroll to discover</div>
+</section>
+<section class="about" id="story">
+  <div class="about-photo reveal"><img src="assets/hijab-portrait-2.webp" alt="Portrait of the woman leading Beauty Beyond"></div>
+  <div class="about-copy reveal">
+    <div class="kicker">The woman behind the vision</div>
+    <h2>More than a face.<br><em style="color:#a45f79">A whole presence.</em></h2>
+    <p>Welcome to BEAUTY BEYOND, a little corner inspired by confidence, grace and individuality. She is the heart, face and lead of this page — setting its tone with her style, her energy and her own unmistakable presence.</p>
+    <p>This space is about celebrating the details that make us unique: a kind spirit, a confident smile, personal style and the courage to be completely yourself.</p>
+    <div class="signature">With grace, always ✨</div>
+  </div>
+</section>
+<section class="gallery" id="gallery">
+  <div class="section-head reveal"><div class="kicker">A little photo diary</div><h2>Her moments. Her magic.</h2><p>Every frame tells a different part of the story. Tap any photo to see it in a little more detail.</p></div>
+  <div class="gallery-grid">
+    <div class="tile reveal"><img src="assets/hijab-portrait-3.webp" alt="Portrait in a black outfit and lavender hijab"></div>
+    <div class="tile reveal"><img src="assets/hijab-portrait-4.webp" alt="Elegant portrait with henna details"></div>
+    <div class="tile reveal"><img src="assets/hijab-portrait-5.webp" alt="Portrait with a soft confident pose"></div>
+    <div class="tile reveal"><img src="assets/mirror-portrait.jpg" alt="Mirror portrait in an elegant outfit"></div>
+    <div class="tile reveal"><img src="assets/dinner-portrait.jpg" alt="Dinner moment in a warm restaurant"></div>
+    <div class="tile reveal"><img src="assets/closeup-portrait.jpg" alt="Close-up portrait"></div>
+    <div class="tile reveal"><img src="assets/hijab-portrait-1.webp" alt="Portrait in a lavender hijab"></div>
+    <div class="tile reveal"><img src="assets/hijab-portrait-2.webp" alt="Portrait in a dark elegant outfit"></div>
+    <div class="tile reveal"><img src="assets/hijab-portrait-4.webp" alt="Elegant portrait with a lavender hijab"></div>
+    <div class="tile reveal"><img src="assets/hijab-portrait-5.webp" alt="Portrait in a black outfit"></div>
+  </div>
+</section>
+<section class="manifesto" id="message">
+  <div class="kicker reveal">The Beauty Beyond belief</div>
+  <blockquote class="reveal">“True beauty is not only what the world <em>sees</em> — it is the confidence, character and light you carry <em>within.</em>”</blockquote>
+  <div class="kicker reveal">Be confident. Be graceful. Be you. ✦</div>
+</section>
+</main>
+<footer>
+  <div class="footer-star">✧</div>
+  <div class="kicker">This is only the beginning</div>
+  <h2>BEAUTY <em style="color:var(--rose)">BEYOND</em> ✨</h2>
+  <p>Celebrating her. Celebrating you. Celebrating beauty without limits.</p>
+  <div class="footer-bottom"><span>© 2026 BEAUTY BEYOND</span><span>Made with love & a little sparkle ✦</span></div>
+</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer"><button class="close" aria-label="Close photo">×</button><img src="" alt="Expanded gallery photo"></div>
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const lightbox=document.getElementById('lightbox'), big=lightbox.querySelector('img');
+document.querySelectorAll('.tile img').forEach(img=>img.addEventListener('click',()=>{big.src=img.src;big.alt=img.alt;lightbox.classList.add('open')}));
+function closeBox(){lightbox.classList.remove('open');big.src=''}
+lightbox.querySelector('.close').addEventListener('click',closeBox);
+lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeBox()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBox()});
+document.addEventListener('pointerdown',e=>{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;const s=document.createElement('span');s.className='spark';s.textContent=Math.random()>.5?'✦':'✧';s.style.left=e.clientX+'px';s.style.top=e.clientY+'px';document.body.appendChild(s);setTimeout(()=>s.remove(),1500)});
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('show')));
+</script>
+</body>
+</html>
